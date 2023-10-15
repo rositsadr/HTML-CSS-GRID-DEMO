@@ -81,13 +81,14 @@ section .container{
 
 section .container .content{
     display: grid;
-    grid-template-rows: 250px 200px 100px;
+    grid-template-rows: 250px 200px 150px;
 }
 
 section .container .content p{
     font-size: 29px;
     letter-spacing: 0;
     /* color: #ffffff; */
+    line-height: 35px;
     font-weight: 400;
     font-family: "Poppins";
     align-self: center;
@@ -105,7 +106,7 @@ section .container .content .buttons button{
     color: #ffffff;
     font-weight: 600;
     font-family: "Poppins";
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
@@ -169,9 +170,12 @@ section.white-bg .container{
 }
 
 section.white-bg .container .service.content h2{
+    margin: 0 auto;
+    line-height: 60px;
     font-size: 50px;
     font-weight: 600;
     font-family: "Poppins";
+    align-self: end;
 }
 
 section.white-bg .container .service-image {
@@ -181,25 +185,25 @@ section.white-bg .container .service-image {
 }
 
 section.white-bg .container .service-image .image-placeholder{
-    width: 600px;
-    height: 600px;
+    width: 505px;
+    height: 480px;
     position: relative;
 }
 
-section.white-bg .container .service-image::before{
+section.white-bg .service.container.one .service-image::before{
     content: '';
     display: block;
-    width: 120px;
-    height: 100px;
+    width: 250px;
+    height: 205px;
     position: absolute;
-    /* bottom: -20px; */
-    /* left: -20px; */
-    top: calc(100% - 80px);
-    right: calc(100% - 100px);
+    /* bottom: -30px; */
+    /* left: -40px; */
+    top: calc(100% - 175px);
+    right: calc(100% - 210px);
     background: #fcc302;
 }
 
-section.white-bg .container .service-image .image-placeholder::after{
+section.white-bg .service.container.one .service-image .image-placeholder::after{
     content: '';
     display: block;
     width: 100%;
@@ -211,28 +215,20 @@ section.white-bg .container .service-image .image-placeholder::after{
     opacity: 0.6;
 }
 
-section.white-bg .container .service-image .image-placeholder img{
-    width: 100%;
-    height: 100%;
-}
-
-section .service-container{
+section.yellow-bg .service.container{
     display: grid;
     max-width: 1200px;
     margin: 0 auto;
-    grid-template-rows: 100px 150px 500px ;
+    grid-template-rows: 100px 150px 600px ;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 60px;
     grid-template-areas: 
         'title title title'
         'slogan slogan slogan'
         'content-1 content-2 content-3';
-        /* 'img-1 img-2 img-3'
-        'subtitle-1 subtitle-2 subtitle-3'
-        'p-1 p-2 p-3'; */
 }
 
-section .service-container h2.title{
+section.yellow-bg .service.container h2.title{
     margin: 0 auto;
     grid-area: title;
     justify-self: center;
@@ -242,7 +238,7 @@ section .service-container h2.title{
     text-align: center;
 }
 
-section .service-container p.slogan{
+section.yellow-bg .service.container p.slogan{
     margin: 0 auto;
     width: 757px;
     height: 85px;
@@ -254,19 +250,14 @@ section .service-container p.slogan{
     text-align: center;
 }
 
-section .service-container div.service-content{
-    justify-self: center;
-}
-
-section .service-container div.service-content h3{
+section.yellow-bg .service.container div.service-content h3{
     margin-bottom: 5px;
     font-size: 38px;
     font-weight: 600;
     font-family: "Poppins";
     text-align: center;
 }
-
-section .service-container div.service-content p{
+section.yellow-bg .service.container div.service-content p{
     line-height: 30px;
     margin: 0 auto;
     font-size: 25px;
@@ -275,60 +266,88 @@ section .service-container div.service-content p{
     text-align: center;
 }
 
-section .service-container div.service-content.one{
+section.yellow-bg .service.container div.service-content.one{
     grid-area: content-1;
 }
 
-section .service-container div.service-content.two{
+section.yellow-bg .service.container div.service-content.two{
     grid-area: content-2;
 }
 
-section .service-container div.service-content.three{
+section.yellow-bg .service.container div.service-content.three{
     grid-area: content-3;
 }
 
+section.white-bg .service.container.three .service.content{
+    text-align: end;
+}
 
+section.white-bg .service.container.three .service-image::before{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 205px;
+    position: absolute;
+    /* bottom: -30px; */
+    /* rigth: -40px; */
+    top: calc(100% - 175px);
+    left: calc(100% - 210px);
+    background: #fcc302;
+}
 
- section .service-container img{
+section.white-bg .service.container.three .service-image .image-placeholder::after{
+    content: '';
+    display: block;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: #fcc302;
+    opacity: 0.6;
 }
 
-/*section .service-container img.img-1{
-    grid-area: img-1;
-    justify-self: center;
+section.yellow-bg .service.container.four .service-content h3{
+    margin: 40px;
+    text-align: center;
+}
+section.yellow-bg .service.container.four .service-content h3 span{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin-right: 20px;
+    display: inline-block;
 }
 
-section .service-container img.img-2{
-    grid-area: img-2;
-    justify-self: center;
+section.yellow-bg .service.container.four .service-content h3 span.regular-price{
+    text-decoration:line-through;
+    text-decoration-thickness: 3px ;
 }
 
-section .service-container img.img-3{
-    grid-area: img-3;
-    justify-self: center;
+section.yellow-bg .service.container.four .service-content .bt{
+    margin: 25px;
+    text-align: center;
 }
 
-section .service-container h3.subtitle-1{
-    grid-area: subtitle-1;
-    justify-self: center;
+section.yellow-bg .service.container.four .service-content .bt button{
+    width: 199px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #00bdc9;
+    border: #00bdc9;
+    transition: 0.3s;
 }
-section .service-container h3.subtitle-2{
-    grid-area: subtitle-2;
-    justify-self: center;
+
+section.yellow-bg .service.container.four .service-content .bt button:hover{
+    background: #00bec9;
+    border: 1px solid #4d81fe;
 }
-section .service-container h3.subtitle-3{
-    grid-area: subtitle-3;
-    justify-self: center;
+
+section.yellow-bg .service.container.four .service-content .bt button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    width: 600;
+    font-family: "Poppins";
+    text-align: center;
 }
-section .service-container p.p-1{
-    grid-area: p-1;
-    justify-self: center;
-}
-section .service-container p.p-2{
-    grid-area: p-2;
-    justify-self: center;
-}
-section .service-container p.p-3{
-    grid-area: p-3;
-    justify-self: center;
-} */
