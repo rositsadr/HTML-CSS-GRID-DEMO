@@ -87,7 +87,6 @@ section .container .content{
 section .container .content p{
     font-size: 29px;
     letter-spacing: 0;
-    /* color: #ffffff; */
     line-height: 35px;
     font-weight: 400;
     font-family: "Poppins";
@@ -118,32 +117,27 @@ section .container .banner.content .banner.buttons button.contact-us{
     margin-right: 20px;
 }
 
-section .container .banner.content .banner.buttons button.contact-us:hover{
-    background: transparent;
-    color: #00bec9;
+section .container .banner.content .banner.buttons button:hover{
+    outline: 2px solid #4d81fe;
 }
+    
 
 section .container .content .buttons button.our-services{
     background:#fcc302;
     border:4px solid #ffffff;
 }
 
-section .container .content .buttons button.our-services:hover{
-    background: #ffffff;
-    border:4px solid #fcc302;
-    color: #fcc302;
-}
 
-section.yellow-bg{
+section.bg-y{
     background: #fcc302;
     color: #ffffff;
 }
 
-section.yellow-bg .container{
+section.bg-y .container{
     grid-template-columns: 60% 40%;
 }
 
-section.yellow-bg .container .content h1{
+section.bg-y .container .content h1{
     font-size: 67px;
     letter-spacing: 1px;
     /* color: #ffffff; */
@@ -154,22 +148,22 @@ section.yellow-bg .container .content h1{
     padding-top: 60px;
 }
 
-section.yellow-bg .container .banner-image img{
+section.bg-y .container .banner-image img{
     width: 400px;
     height: 600px;
 }
 
 
-section.white-bg{
+section.bg-w{
     background: #ffffff;
     color: #313243;
 }
 
-section.white-bg .container{
+section.bg-w .container{
     grid-template-columns: 1fr 1fr;
 }
 
-section.white-bg .container .service.content h2{
+section.bg-w .container .service.content h2{
     margin: 0 auto;
     line-height: 60px;
     font-size: 50px;
@@ -178,19 +172,19 @@ section.white-bg .container .service.content h2{
     align-self: end;
 }
 
-section.white-bg .container .service-image {
+section.bg-w .container .service-image {
     justify-self: center;
     align-self: center;
     position: relative;
 }
 
-section.white-bg .container .service-image .image-placeholder{
+section .container .service-image .image-placeholder{
     width: 505px;
     height: 480px;
     position: relative;
 }
 
-section.white-bg .service.container.one .service-image::before{
+section .service.container.one .service-image::before{
     content: '';
     display: block;
     width: 250px;
@@ -203,7 +197,7 @@ section.white-bg .service.container.one .service-image::before{
     background: #fcc302;
 }
 
-section.white-bg .service.container.one .service-image .image-placeholder::after{
+section .service.container.one .service-image .image-placeholder::after{
     content: '';
     display: block;
     width: 100%;
@@ -215,7 +209,7 @@ section.white-bg .service.container.one .service-image .image-placeholder::after
     opacity: 0.6;
 }
 
-section.yellow-bg .service.container{
+section .service.container.gr{
     display: grid;
     max-width: 1200px;
     margin: 0 auto;
@@ -228,7 +222,7 @@ section.yellow-bg .service.container{
         'content-1 content-2 content-3';
 }
 
-section.yellow-bg .service.container h2.title{
+section .service.container.gr h2.title{
     margin: 0 auto;
     grid-area: title;
     justify-self: center;
@@ -238,7 +232,7 @@ section.yellow-bg .service.container h2.title{
     text-align: center;
 }
 
-section.yellow-bg .service.container p.slogan{
+section .service.container.gr p.slogan{
     margin: 0 auto;
     width: 757px;
     height: 85px;
@@ -250,14 +244,14 @@ section.yellow-bg .service.container p.slogan{
     text-align: center;
 }
 
-section.yellow-bg .service.container div.service-content h3{
+section .service.container.gr .service-content h3{
     margin-bottom: 5px;
     font-size: 38px;
     font-weight: 600;
     font-family: "Poppins";
     text-align: center;
 }
-section.yellow-bg .service.container div.service-content p{
+section .service.container.gr .service-content p{
     line-height: 30px;
     margin: 0 auto;
     font-size: 25px;
@@ -266,23 +260,23 @@ section.yellow-bg .service.container div.service-content p{
     text-align: center;
 }
 
-section.yellow-bg .service.container div.service-content.one{
+section .service.container.gr .service-content.one{
     grid-area: content-1;
 }
 
-section.yellow-bg .service.container div.service-content.two{
+section .service.container.gr .service-content.two{
     grid-area: content-2;
 }
 
-section.yellow-bg .service.container div.service-content.three{
+section .service.container.gr .service-content.three{
     grid-area: content-3;
 }
 
-section.white-bg .service.container.three .service.content{
+section .service.container.three .service.content{
     text-align: end;
 }
 
-section.white-bg .service.container.three .service-image::before{
+section .service.container.three .service-image::before{
     content: '';
     display: block;
     width: 250px;
@@ -295,7 +289,7 @@ section.white-bg .service.container.three .service-image::before{
     background: #fcc302;
 }
 
-section.white-bg .service.container.three .service-image .image-placeholder::after{
+section .service.container.three .service-image .image-placeholder::after{
     content: '';
     display: block;
     width: 100%;
@@ -307,29 +301,37 @@ section.white-bg .service.container.three .service-image .image-placeholder::aft
     opacity: 0.6;
 }
 
-section.yellow-bg .service.container.four .service-content h3{
-    margin: 40px;
+section .service.container.gr .service-content h3{
     text-align: center;
-}
-section.yellow-bg .service.container.four .service-content h3 span{
     font-size: 38px;
+    font-weight: 600;
+}
+
+section .service.container.gr .service-content h3.vet-name{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+section .service.container.gr .service-content h3 span{
+    font-size: 42px;
     font-weight: 600;
     font-family: "Poppins";
     margin-right: 20px;
     display: inline-block;
 }
 
-section.yellow-bg .service.container.four .service-content h3 span.regular-price{
+section .service.container.gr .service-content h3 span.regular-price{
     text-decoration:line-through;
     text-decoration-thickness: 3px ;
 }
 
-section.yellow-bg .service.container.four .service-content .bt{
+section .service.container.gr .service-content .bt{
     margin: 25px;
     text-align: center;
 }
 
-section.yellow-bg .service.container.four .service-content .bt button{
+section .service.container.gr .service-content .bt button{
     width: 199px;
     height: 60px;
     border-radius: 30px;
@@ -338,16 +340,35 @@ section.yellow-bg .service.container.four .service-content .bt button{
     transition: 0.3s;
 }
 
-section.yellow-bg .service.container.four .service-content .bt button:hover{
+section .service.container.gr .service-content .bt button:hover{
     background: #00bec9;
     border: 1px solid #4d81fe;
 }
 
-section.yellow-bg .service.container.four .service-content .bt button a{
+section .service.container.gr .service-content .bt button a{
     text-decoration: none;
     color: #ffffff;
     font-size: 25px;
     width: 600;
     font-family: "Poppins";
     text-align: center;
+}
+
+section .service.container.gr .service-content .icons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+section .service.container.gr .service-content .icons button{
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    background:#daac00;
+    border: #daac00;
+    border-radius: 50%;
+}
+
+section .service.container.gr .service-content .icons a{
+    font-size: 20px;
+    text-decoration: none;
 }
