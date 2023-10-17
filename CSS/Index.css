@@ -222,7 +222,7 @@ section .service.container.gr{
         'content-1 content-2 content-3';
 }
 
-section .service.container.gr h2.title{
+section .service.container.gr .title{
     margin: 0 auto;
     grid-area: title;
     justify-self: center;
@@ -232,7 +232,7 @@ section .service.container.gr h2.title{
     text-align: center;
 }
 
-section .service.container.gr p.slogan{
+section .service.container.gr .slogan{
     margin: 0 auto;
     width: 757px;
     height: 85px;
@@ -313,17 +313,24 @@ section .service.container.gr .service-content h3.vet-name{
     font-weight: 700;
 }
 
-section .service.container.gr .service-content h3 span{
+section .service.container.gr .service-content h3 p{
     font-size: 42px;
     font-weight: 600;
     font-family: "Poppins";
-    margin-right: 20px;
+    margin:0 10px;
     display: inline-block;
+    position: relative;
 }
 
-section .service.container.gr .service-content h3 span.regular-price{
-    text-decoration:line-through;
-    text-decoration-thickness: 3px ;
+section .service.container.gr .service-content h3 p.regular-price::after{
+    content: '';
+    display: block;
+    width: 109px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 50% ;
+    right: -10px;
 }
 
 section .service.container.gr .service-content .bt{
@@ -370,5 +377,127 @@ section .service.container.gr .service-content .icons button{
 
 section .service.container.gr .service-content .icons a{
     font-size: 20px;
+    text-decoration: none;
+}
+
+section.bg-img{
+    padding: 0;
+    position: relative;
+    height: 575px;
+}
+
+section.bg-img .section-placeholder{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section.bg-img .section-placeholder >*{
+    position: relative;
+    z-index: 100;
+}
+
+section.bg-img::before{
+    content: '';
+    display: block;
+    position:absolute;
+    background-image: url(../Images/c6_dog.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+}
+
+section.bg-img .section-placeholder::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fbc301;
+    width: 100%;
+    height: 100%;
+    opacity: 0.839;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+section .service.container.gr-2{
+    margin: 0 auto;
+    padding: 9% 9%;
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-gap: 30px 60px;
+}
+
+section .service.container.gr-2 .service-content {
+    text-align: center;
+}
+
+section .service.container.gr-2 .service-content .image-placeholder{
+    width:90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+section .service.container.gr-2 .service-content .image-placeholder img{
+    width: 100%;
+    height: 100%;
+}
+
+section .service.container.gr-2 p.ph-num{
+    font-size: 42px;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin: 0 auto;
+}
+
+section .service.container.gr-2 p.division{
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin: 0 auto;
+}
+
+section .service.container.gr .service-content div.content-placeholder{
+    padding: 20px 20px;
+    border: 1px solid gray;
+    border-top: none;
+}
+
+section .service.container.gr .service-content h3.sec7{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 auto;
+    font-family: "Poppins";
+    text-align: left;
+}
+
+section .service.container.gr .service-content p.date{
+    font-size: 17px;
+    color: #00bec9;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: left;
+}
+
+section .service.container.gr .service-content p.p-content{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: left;
+}
+
+section .service.container.gr .service-content a{
+    font-size: 21px;
+    color: #00bec9;
+    font-weight: 500;
+    font-family: "Poppins";
     text-decoration: none;
 }
