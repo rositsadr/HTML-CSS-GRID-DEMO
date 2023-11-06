@@ -1,0 +1,58 @@
+section .service.container.gr .service-content.rel{
+    position: relative;
+    width: 361px;
+    height: 628px;
+    background-color: #f3f3f3;
+}
+
+section .service.container.gr .service-content.shadow{
+    background: #ffffff;
+    filter: drop-shadow(5.634px 10.595px 25.5px rgba(74,74,74,0.1));
+}
+
+section .service.container.gr .service-content.rel div.content-placeholder{
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+section .service.container.gr .service-content.br div.content-placeholder{
+    border-left: 2px solid #d6d6d6;
+    border-right: 2px solid #d6d6d6;
+    border-bottom: 2px solid #d6d6d6;
+}
+
+section .service.container.gr .service-content.shadow div.content-placeholder{
+    border: none;
+}
+
+section .service.container.gr .service-content.rel h3.sec8{
+    line-height: 28px;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: left;
+}
+
+section .service.container.gr .service-content.rel p.date{
+    font-size: 17px;
+    color: #00bec9;
+    font-weight: 400;
+    text-align: left;
+}
+
+section .service.container.gr .service-content.rel p.p-content{
+    margin: 20px 0;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+}
+
+section .service.container.gr .service-content.rel a{
+    font-size: 21px;
+    color: #00bec9;
+    font-weight: 500;
+    font-family: "Poppins";
+    text-decoration: none;
+}

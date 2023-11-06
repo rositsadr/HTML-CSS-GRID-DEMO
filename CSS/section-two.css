@@ -1,0 +1,24 @@
+section .service.container.one .service-image::before{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 205px;
+    position: absolute;
+    /* bottom: -30px; */
+    /* left: -40px; */
+    top: calc(100% - 175px);
+    right: calc(100% - 210px);
+    background: #fcc302;
+}
+
+section .service.container.one .service-image .image-placeholder::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: #fcc302;
+    opacity: 0.6;
+}

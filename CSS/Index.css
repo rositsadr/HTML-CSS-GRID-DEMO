@@ -1,82 +1,38 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url("./banner.css");
+@import url("./section-two.css");
+@import url("./section-four.css");
+@import url("./section-eight.css");
+@import url("./section-seven.css");
+@import url("./section-six.css");
+@import url("./section-five.css");
+
 body{
     margin: 0;
     padding: 0;
-}
-
-header{
-    background: #daac00;
-}
-
-header .container-header{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 120px;
-    grid-template-columns: 220px minmax(200px, 1fr) 270px;
-    align-items: center;
-    justify-items: center;
-}
-
-header .container-header .logo-wrapper{
-    font-size: 22px;
-    color: #ffffff;
-    font-weight: 500;
     font-family: "Poppins";
-}
-
-header .container-header .nav-wrapper ul{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-header .container-header .nav-wrapper ul li a{
-    text-decoration: none;
-    font-size: 29px;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Poppins";
-}
-
-header .container-header .search-wrapper form{
-    position: relative;
-}
-
-header .container-header .search-wrapper form input{
-    background: #fcc302;
-    border: none;
-    width: 274px;
-    height: 51px;
-    filter: drop-shadow(7.512px 14.127px 9px rgba(74,74,74,0.1));
-    background-color: #fcc302;
-    font-size: 21px;
-    letter-spacing: 0px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Poppins";
-    padding-left: 20px ;
-}
-
-header .container-header .search-wrapper form input::placeholder{
-    color: #ffffff;
-    opacity: 1;
-}
-
-header .container-header .search-wrapper form button[type="submit"]{
-    background: #00bec9;
-    border: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    width: 71px;
-    height: 53px;
-    filter: drop-shadow(7.512px 14.127px 9px rgba(74,74,74,0.1));
 }
 
 section{
     padding: 80px 0;
     box-sizing: border-box;
+}
+
+section.bg-y{
+    background: #fcc302;
+    color: #ffffff;
+}
+
+section.bg-w{
+    background: #ffffff;
+    color: #313243;
+}
+
+section h3{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
 }
 
 section .container{
@@ -95,7 +51,6 @@ section .container .content p{
     letter-spacing: 0;
     line-height: 35px;
     font-weight: 400;
-    font-family: "Poppins";
     align-self: center;
     margin: 0 auto;
 }
@@ -117,68 +72,24 @@ section .container .content .buttons button{
     transition: 0.3s;
 }
 
-section .container .banner.content .banner.buttons button.contact-us{
-    background: #00bec9;
-    border: 4px solid #00bec9;
-    margin-right: 20px;
-}
-
-section .container .banner.content .banner.buttons button:hover{
-    outline: 2px solid #4d81fe;
-}
-    
-
 section .container .content .buttons button.our-services{
     background:#fcc302;
     border:4px solid #ffffff;
 }
 
-
-section.bg-y{
-    background: #fcc302;
-    color: #ffffff;
-}
-
-section.bg-y .container{
-    grid-template-columns: 60% 40%;
-}
-
-section.bg-y .container .content h1{
-    font-size: 67px;
-    letter-spacing: 1px;
-    /* color: #ffffff; */
-    font-weight: 600;
-    font-family: "Poppins";
-    align-self: start;
-    margin: 0;
-    padding-top: 60px;
-}
-
-section.bg-y .container .banner-image img{
-    width: 400px;
-    height: 600px;
-}
-
-
-section.bg-w{
-    background: #ffffff;
-    color: #313243;
-}
-
-section.bg-w .container{
+section .container.grfr{
     grid-template-columns: 1fr 1fr;
 }
 
-section.bg-w .container .service.content h2{
+section .container .service.content h2{
     margin: 0 auto;
     line-height: 60px;
     font-size: 50px;
     font-weight: 600;
-    font-family: "Poppins";
     align-self: end;
 }
 
-section.bg-w .container .service-image {
+section .container .service-image {
     justify-self: center;
     align-self: center;
     position: relative;
@@ -190,35 +101,7 @@ section .container .service-image .image-placeholder{
     position: relative;
 }
 
-section .service.container.one .service-image::before{
-    content: '';
-    display: block;
-    width: 250px;
-    height: 205px;
-    position: absolute;
-    /* bottom: -30px; */
-    /* left: -40px; */
-    top: calc(100% - 175px);
-    right: calc(100% - 210px);
-    background: #fcc302;
-}
-
-section .service.container.one .service-image .image-placeholder::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    background: #fcc302;
-    opacity: 0.6;
-}
-
 section .service.container.gr{
-    display: grid;
-    max-width: 1200px;
-    margin: 0 auto;
     grid-template-rows: 100px 150px 630px ;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 60px;
@@ -234,7 +117,6 @@ section .service.container.gr .title{
     justify-self: center;
     font-size: 75px;
     font-weight: 700;
-    font-family: "Poppins";
     text-align: center;
 }
 
@@ -246,23 +128,17 @@ section .service.container.gr .slogan{
     justify-self: center;
     font-size: 33px;
     font-weight: 400;
-    font-family: "Poppins";
     text-align: center;
 }
 
 section .service.container.gr .service-content h3{
     margin-bottom: 5px;
-    font-size: 38px;
-    font-weight: 600;
-    font-family: "Poppins";
-    text-align: center;
 }
 section .service.container.gr .service-content p{
     line-height: 30px;
     margin: 0 auto;
     font-size: 25px;
     font-weight: 400;
-    font-family: "Poppins";
     text-align: center;
 }
 
@@ -276,359 +152,4 @@ section .service.container.gr .service-content.two{
 
 section .service.container.gr .service-content.three{
     grid-area: content-3;
-}
-
-section .service.container.three .service.content{
-    text-align: end;
-}
-
-section .service.container.three .service-image::before{
-    content: '';
-    display: block;
-    width: 250px;
-    height: 205px;
-    position: absolute;
-    /* bottom: -30px; */
-    /* rigth: -40px; */
-    top: calc(100% - 175px);
-    left: calc(100% - 210px);
-    background: #fcc302;
-}
-
-section .service.container.three .service-image .image-placeholder::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    background: #fcc302;
-    opacity: 0.6;
-}
-
-section .service.container.gr .service-content h3{
-    text-align: center;
-    font-size: 38px;
-    font-weight: 600;
-}
-
-section .service.container.gr .service-content h3.vet-name{
-    text-align: center;
-    font-size: 29px;
-    font-weight: 700;
-}
-
-section .service.container.gr .service-content h3 p{
-    font-size: 42px;
-    font-weight: 600;
-    font-family: "Poppins";
-    margin:0 10px;
-    display: inline-block;
-    position: relative;
-}
-
-section .service.container.gr .service-content h3 p.regular-price::after{
-    content: '';
-    display: block;
-    width: 109px;
-    height: 4px;
-    background-color: #ffffff;
-    position: absolute;
-    bottom: 50% ;
-    right: -10px;
-}
-
-section .service.container.gr .service-content .bt{
-    margin: 25px;
-    text-align: center;
-}
-
-section .service.container.gr .service-content .bt button{
-    width: 199px;
-    height: 60px;
-    border-radius: 30px;
-    background-color: #00bdc9;
-    border: #00bdc9;
-    transition: 0.3s;
-}
-
-section .service.container.gr .service-content .bt button:hover{
-    background: #00bec9;
-    border: 1px solid #4d81fe;
-}
-
-section .service.container.gr .service-content .bt button a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 25px;
-    width: 600;
-    font-family: "Poppins";
-    text-align: center;
-}
-
-section .service.container.gr .service-content .icons{
-    text-align: center;
-    margin-top: 20px;
-}
-
-section .service.container.gr .service-content .icons button{
-    margin: 0 5px;
-    width: 35px;
-    height: 35px;
-    background:#daac00;
-    border: #daac00;
-    border-radius: 50%;
-}
-
-section .service.container.gr .service-content .icons a{
-    font-size: 20px;
-    text-decoration: none;
-}
-
-section.bg-img{
-    padding: 0;
-    position: relative;
-    height: 575px;
-}
-
-section.bg-img .section-placeholder{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-section.bg-img .section-placeholder >*{
-    position: relative;
-    z-index: 100;
-}
-
-section.bg-img::before{
-    content: '';
-    display: block;
-    position:absolute;
-    background-image: url(../Images/c6_dog.jpg);
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    top: 0; 
-    left: 0;
-}
-
-section.bg-img .section-placeholder::after{
-    content: '';
-    display: block;
-    position: absolute;
-    background: #fbc301;
-    width: 100%;
-    height: 100%;
-    opacity: 0.839;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-section .service.container.gr-2{
-    margin: 0 auto;
-    padding: 9% 9%;
-    display: grid;
-    max-width: 1200px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100%;
-    grid-gap: 30px 60px;
-}
-
-section .service.container.gr-2 .service-content {
-    text-align: center;
-}
-
-section .service.container.gr-2 .service-content .image-placeholder{
-    width:90px;
-    height: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-}
-
-section .service.container.gr-2 .service-content .image-placeholder img{
-    width: 100%;
-    height: 100%;
-}
-
-section .service.container.gr-2 p.ph-num{
-    font-size: 42px;
-    font-weight: 500;
-    font-family: "Poppins";
-    margin: 0 auto;
-}
-
-section .service.container.gr-2 p.division{
-    font-size: 38px;
-    font-weight: 700;
-    font-family: "Poppins";
-    margin: 0 auto;
-}
-
-section .service.container.gr .service-content.rel{
-    position: relative;
-    width: 361px;
-    height: 628px;
-    background-color: #f3f3f3;
-}
-
-section .service.container.gr .service-content.shadow{
-    background: #ffffff;
-    filter: drop-shadow(5.634px 10.595px 25.5px rgba(74,74,74,0.1));
-}
-
-section .service.container.gr .service-content div.content-placeholder{
-    padding: 30px;
-    position: absolute;
-    bottom: 0;
-}
-
-section .service.container.gr .service-content.br div.content-placeholder{
-    border-left: 2px solid #d6d6d6;
-    border-right: 2px solid #d6d6d6;
-    border-bottom: 2px solid #d6d6d6;
-}
-
-section .service.container.gr .service-content.shadow div.content-placeholder{
-    border: none;
-}
-
-section .service.container.gr .service-content h3.sec7{
-    line-height: 28px;
-    font-size: 25px;
-    font-weight: 600;
-    margin: 0 auto;
-    text-align: left;
-}
-
-section .service.container.gr .service-content p.date{
-    font-size: 17px;
-    color: #00bec9;
-    font-weight: 400;
-    text-align: left;
-}
-
-section .service.container.gr .service-content p.p-content{
-    margin: 20px 0;
-    line-height: 20px;
-    font-size: 17px;
-    font-weight: 400;
-    text-align: left;
-}
-
-section .service.container.gr .service-content a{
-    font-size: 21px;
-    color: #00bec9;
-    font-weight: 500;
-    font-family: "Poppins";
-    text-decoration: none;
-}
-
-footer{
-    background: #343434;
-    padding: 120px 0;
-}
-
-footer .footer-content{
-    font-family: "Poppins";
-    color: #ffffff;
-    margin: 0 auto;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 26.7% 26.7% 46.6%;
-    margin-bottom: 40px;
-} 
-
-footer .footer-content nav h3{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 38px;
-    font-weight: 600;
-}
-
-footer .footer-content nav ul{
-    list-style: none;
-    padding: 0;
-}
-
-footer .footer-content nav ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 25px;
-    line-height: 44px;
-    font-weight: 400;
-}
-
-footer .footer-content .social{
-    text-align: right;
-}
-
-footer .footer-content .social h3{
-    font-size: 38px;
-    line-height: 8px;
-    font-weight: 600;
-}
-
-footer .footer-content .social p{
-    font-size: 25px;
-    line-height: 33px;
-    font-weight: 400;
-}
-
-footer .footer-content .social .email-wrapper{
-    margin-top: 50px;
-}
-
-footer .footer-content .social .email-wrapper form{
-    position: relative;
-}
-
-footer .footer-content .social .email-wrapper form input{
-    width: 530px;
-    height: 90px;
-    background-color: #daac00;
-    border: none;
-    font-size: 21px;
-    letter-spacing: 0px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Poppins";
-    padding-left: 20px ;
-}
-
-footer .footer-content .social .email-wrapper form button[type=submit]{
-    width: 144px;
-    height: 92px;
-    background-color: #00bec9;
-    border: 2px solid #00bec9;
-    position: absolute;
-    top: 0;
-    right: 0;  
-    cursor: pointer;
-}
-
-footer .footer-content .social .icons{
-    margin-top: 50px;
-}
-
-footer .footer-content .social .icons button{
-    margin: 0 5px;
-    width: 35px;
-    height: 35px;
-    background: #ffffff;
-    border-radius: 50%;
-    border: none;
-    text-align: center;
-}
-
-footer .footer-content .social .icons button a{
-    text-decoration: none;
-    font-size: 22px;
-    color: #343434;
 }

@@ -1,0 +1,46 @@
+section .service.container.gr .service-content h3 p.regular-price::after{
+    content: '';
+    display: block;
+    width: 109px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 50% ;
+    right: -10px;
+}
+
+section .service.container.gr .service-content h3 p{
+    font-size: 42px;
+    font-weight: 600;
+    margin:0 10px;
+    display: inline-block;
+    position: relative;
+}
+
+section .service.container.gr .service-content .bt{
+    margin: 25px;
+    text-align: center;
+}
+
+section .service.container.gr .service-content .bt button{
+    width: 199px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #00bdc9;
+    border: #00bdc9;
+    transition: 0.3s;
+}
+
+section .service.container.gr .service-content .bt button:hover{
+    background: #00bec9;
+    border: 1px solid #4d81fe;
+}
+
+section .service.container.gr .service-content .bt button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    width: 600;
+    font-family: "Poppins";
+    text-align: center;
+}

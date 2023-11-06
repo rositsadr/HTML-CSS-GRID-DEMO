@@ -1,0 +1,82 @@
+section .service.container.gr-2{
+    margin: 0 auto;
+    padding: 9% 9%;
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-gap: 30px 60px;
+}
+
+section .service.container.gr-2 .service-content {
+    text-align: center;
+}
+
+section .service.container.gr-2 .service-content .image-placeholder{
+    width:90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+section .service.container.gr-2 .service-content .image-placeholder img{
+    width: 100%;
+    height: 100%;
+}
+
+section .service.container.gr-2 p.ph-num{
+    font-size: 42px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+section .service.container.gr-2 p.division{
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+section.bg-img{
+    padding: 0;
+    position: relative;
+    height: 575px;
+}
+
+section.bg-img .section-placeholder{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section.bg-img .section-placeholder >*{
+    position: relative;
+    z-index: 100;
+}
+
+section.bg-img::before{
+    content: '';
+    display: block;
+    position:absolute;
+    background-image: url(../Images/c6_dog.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+}
+
+section.bg-img .section-placeholder::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fbc301;
+    width: 100%;
+    height: 100%;
+    opacity: 0.839;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

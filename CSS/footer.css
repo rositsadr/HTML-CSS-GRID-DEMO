@@ -1,0 +1,102 @@
+footer{
+    background: #343434;
+    padding: 120px 0;
+}
+
+footer .footer-content{
+    font-family: "Poppins";
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 26.7% 26.7% 46.6%;
+    margin-bottom: 40px;
+} 
+
+footer .footer-content nav h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+footer .footer-content nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-content nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 44px;
+    font-weight: 400;
+}
+
+footer .footer-content .social{
+    text-align: right;
+}
+
+footer .footer-content .social h3{
+    font-size: 38px;
+    line-height: 8px;
+    font-weight: 600;
+}
+
+footer .footer-content .social p{
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 400;
+}
+
+footer .footer-content .social .email-wrapper{
+    margin-top: 50px;
+}
+
+footer .footer-content .social .email-wrapper form{
+    position: relative;
+}
+
+footer .footer-content .social .email-wrapper form input{
+    width: 530px;
+    height: 90px;
+    background-color: #daac00;
+    border: none;
+    font-size: 21px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    padding-left: 20px ;
+}
+
+footer .footer-content .social .email-wrapper form button[type=submit]{
+    width: 144px;
+    height: 92px;
+    background-color: #00bec9;
+    border: 2px solid #00bec9;
+    position: absolute;
+    top: 0;
+    right: 0;  
+    cursor: pointer;
+}
+
+footer .footer-content .social .icons{
+    margin-top: 50px;
+}
+
+footer .footer-content .social .icons button{
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+}
+
+footer .footer-content .social .icons button a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #343434;
+}

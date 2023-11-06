@@ -1,0 +1,25 @@
+
+section .service.container.gr .service-content h3.vet-name{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+section .service.container.gr .service-content .icons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+section .service.container.gr .service-content .icons button{
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    background:#daac00;
+    border: #daac00;
+    border-radius: 50%;
+}
+
+section .service.container.gr .service-content .icons a{
+    font-size: 20px;
+    text-decoration: none;
+}
